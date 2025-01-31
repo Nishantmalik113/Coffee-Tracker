@@ -26,7 +26,7 @@ export default function Layout(props) {
   )
 
   const footer = (
-    <footer className='flex flex-col items-center mx-auto py-4 bg-CoffeeBg1 text-sm font-semibold sm:text-base text-align: center'>
+    <footer className='flex flex-col items-center mx-auto p-4 bg-CoffeeBg1 text-sm font-semibold sm:text-base text-align: center'>
       <p> <abbr title="Coffee-Tracker">Caffiend</abbr> was made by <a className='text-brown underline' target='_black' href="https://www.linkedin.com/in/nishantmalik113">Nishant Malik</a>. Check out the project on <a className='text-brown underline' target='_black' href="https://www.github.com/nishantmalik113">Github</a>!</p>
     </footer>
   )
