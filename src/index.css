@@ -1,0 +1,239 @@
+@import "tailwindcss";
+
+@theme {
+    --color-CoffeeBg1: #FFEDDF;
+    --color-CoffeeBg2: #D3B89A;
+    --color-brown: #995E32;
+    --color-lightBrown: #996666;
+    --color-input: #808080;
+}
+:root{
+    --bg-color: #E5D5C2;
+}
+
+*{
+    font-family: "Poppins", sans-serif;
+}
+
+button{
+    cursor: pointer;
+}
+
+.splheading{
+    font-family: "Quicksand", sans-serif;
+}
+
+.zincshadow{
+    box-shadow: 7px 7px rgba(0,0,0,0.7);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.specialBtn{
+    border: 1px solid brown;
+    padding: auto;
+}
+
+.zincshadow:hover{
+    cursor: pointer;
+    transform: translate(3px,3px);
+    color:black;
+    transition: 0.8s;
+    box-shadow: none;
+    background-color: transparent;
+  }
+
+.splcards{
+    text-align: left;
+    padding: 30px;
+    border-radius: 20px;
+    background: linear-gradient(90deg, rgba(150,75,0,0.4), rgba(150,75,0,0.1));
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.splcards:hover{
+    transform: translate(3px,3px);
+    transition: 0.8s;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.17);
+}
+
+.glass{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+
+}
+
+.Button-card {
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    background: linear-gradient(90deg, rgba(150,75,0,0.4), rgba(150,75,0,0.1));
+}
+.Button-card:hover{
+    cursor: pointer;
+    background: linear-gradient(90deg, rgba(85,52,43,2), rgba(150,75,0,0.5));
+    color:white;
+    transition: 0.4s;
+}
+.Button-card-selected{
+    cursor: pointer;
+    background: linear-gradient(90deg, rgba(85,52,43,2), rgba(150,75,0,0.5));
+    color:white;
+    transition: 0.4s;
+}
+
+.stat-card{
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    background: linear-gradient(90deg, rgba(150,75,0,0.4), rgba(150,75,0,0.1));
+}
+
+table {
+    border: 3px solid #995E32;
+    background: #F9F6EE;
+}
+
+table tr:last-child td:first-child {
+    border-bottom-left-radius: 8px;
+}
+
+table tr:last-child td:last-child {
+    border-bottom-right-radius: 8px;
+}
+
+table tr:first-child th:first-child {
+    border-top-left-radius: 8px;
+}
+
+table tr:first-child th:last-child {
+    border-top-right-radius: 8px;
+}
+
+th {
+    background-color: #F9F6EE;
+    border: 1px solid #995E32;
+}
+
+td {
+    background: #DEB89A;
+    border: 1px solid #995E32;
+}
+
+td,
+th {
+    text-align: left;
+    padding: 8px;
+}
+
+thead {
+    border-collapse: collapse;
+}
+
+tfoot {
+    border-top: 1px solid black;
+}
+
+table tr:hover td,
+tbody tr:nth-child(even):hover td {
+    background-color: #F9F6EE;
+}
+
+.coffee-history {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .coffee-history i {
+    font-size: 1.5rem;
+  }
+  
+  .modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    padding: 2rem;
+  }
+  
+  .modal-underlay {
+    position: absolute;
+    inset: 0;
+    background: white;
+    opacity: 0.8;
+    z-index: 99;
+    border: none;
+    width: 100%;
+    box-shadow: unset;
+    cursor: default;
+  }
+  
+  .modal-underlay:hover {
+    transform: translate(0);
+    box-shadow: unset;
+  }
+  
+  .modal-content {
+    position: relative;
+    z-index: 101;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    min-height: 400px;
+    border-radius: 0.25rem;
+    background: #F9F6EE;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    justify-content: center; */
+    gap: 1rem;
+  }
+
+input,
+select{
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    background: white; 
+    border: 2px solid white;
+}
+
+input:hover{
+    cursor: pointer;
+    border: 2px solid #995E32;
+}
+
+.modal-reset {
+    position: relative;
+    z-index: 102;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    min-height: 400px;
+    border-radius: 0.25rem;
+    background: #F9F6EE;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    justify-content: center; */
+    gap: 1rem;
+  }
