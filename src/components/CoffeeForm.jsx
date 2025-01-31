@@ -114,11 +114,11 @@ export default function CoffeeForm(props) {
           </select>
         )}
       </div>  
-      <div className=' flex gap-10  px-7 w-[200px] md:w-[200px] lg:w-[500px]'>
+      <div className='flex items-center px-5'>
         <h4 className='p-2 text-xs sm:text-sm md:text-md'>Add the Cost ($)</h4>
-        <input type="number " value={coffeeCost} onChange={(e)=>{
+        <input type="number" value={coffeeCost} onChange={(e)=>{
           setCoffeeCost(e.target.value)
-        }} className=' rounded-lg p-2 border-brown border-2' placeholder='4.50' />
+        }}  placeholder='4.50' />
       </div>
       <div className='grid grid-col w-full md:w-[600px] lg:w-[900px] px-5'>
         <h4 className='p-2 text-xs sm:text-sm md:text-md '>Time Since Consumption:</h4>
