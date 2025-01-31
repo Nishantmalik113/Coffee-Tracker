@@ -116,7 +116,7 @@ export default function CoffeeForm(props) {
       </div>  
       <div className='flex items-center px-5'>
         <h4 className='p-2 text-xs sm:text-sm md:text-md'>Add the Cost ($)</h4>
-        <input type="number" value={coffeeCost} onChange={(e)=>{
+        <input className='w-[200px]' type="number" value={coffeeCost} onChange={(e)=>{
           setCoffeeCost(e.target.value)
         }}  placeholder='4.50' />
       </div>
