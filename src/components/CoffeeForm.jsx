@@ -67,7 +67,7 @@ export default function CoffeeForm(props) {
   }
 
   return (
-    <section id='CoffeeForm' className='flex flex-col gap-3 items-center justify-center pt-10 pb-15 border-t-3 border-dashed border-brown'>
+    <section id='CoffeeForm' className='flex flex-col gap-3 justify-center pt-10 pb-15 border-t-3 border-dashed border-brown'>
       {showModal && (<Modal handleCloseModal={()=>{setShowModal(false)}}>
               <Authentication handleCloseModal={()=>{setShowModal(false)}}/>
             </Modal>)}
@@ -76,7 +76,7 @@ export default function CoffeeForm(props) {
         <i className=' fa-solid fa-pencil' />
         <h1>Start Tracking Today</h1>
       </div>
-      <h2 className='text-xl'>Select Coffee Type</h2>
+      <h2 className='text-xl text-center'>Select Coffee Type</h2>
       <div className='w-full px-5 grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-10'>
         {coffeeOptions.slice(0,5).map((option, optionIndex)=>{
           return(
@@ -114,9 +114,9 @@ export default function CoffeeForm(props) {
           </select>
         )}
       </div>  
-      <div className=' flex gap-10 w-full px-7'>
+      <div className=' flex gap-10  px-7 w-[200px] md:w-[200px] lg:w-[500px]'>
         <h4 className='p-2 text-xs sm:text-sm md:text-md'>Add the Cost ($)</h4>
-        <input type="number max-w-screen md:w-[600px] lg:w-[900px]" value={coffeeCost} onChange={(e)=>{
+        <input type="number " value={coffeeCost} onChange={(e)=>{
           setCoffeeCost(e.target.value)
         }} className=' rounded-lg p-2 border-brown border-2' placeholder='4.50' />
       </div>
@@ -151,7 +151,7 @@ export default function CoffeeForm(props) {
         </div>
       </div>
       <button onClick={handleSubmitForm} 
-      className='text-md border-2 border-brown font-light px-5 rounded bg-brown text-white py-1 zincshadow'>
+      className='text-md border-2 border-brown font-light px-5 rounded bg-brown text-white py-1 w-fit mx-auto zincshadow'>
         Add Entry
       </button> 
     </section>
