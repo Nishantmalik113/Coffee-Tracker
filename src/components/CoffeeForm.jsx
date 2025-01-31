@@ -114,9 +114,9 @@ export default function CoffeeForm(props) {
           </select>
         )}
       </div>  
-      <div className='max-w-screen flex gap-10 w-full w-[400px] md:w-[600px] lg:w-[900px] px-7'>
+      <div className=' flex gap-10 w-full px-7'>
         <h4 className='p-2 text-xs sm:text-sm md:text-md'>Add the Cost ($)</h4>
-        <input type="number" value={coffeeCost} onChange={(e)=>{
+        <input type="number max-w-screen md:w-[600px] lg:w-[900px]" value={coffeeCost} onChange={(e)=>{
           setCoffeeCost(e.target.value)
         }} className=' rounded-lg p-2 border-brown border-2' placeholder='4.50' />
       </div>
