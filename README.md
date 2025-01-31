@@ -1,6 +1,5 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Caffiend
+HTML | CSS | REACT JS | TAILWIND CSS | FIREBASE
 
 Currently, two official plugins are available:
 
