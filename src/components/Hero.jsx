@@ -10,7 +10,7 @@ export default function Hero() {
         w-full mx-auto pb-4'>
           <div className='flex flex-col gap-4'>
             <p className='sm:text-xs md:text-sm lg:text-md'>Coffee Tracker for Coffee <abbr title="An enthusiast or addict">Fiends</abbr>!</p>
-            <img className='max-w-[250px] mx-auto' src="/public/Coffee-Logo.png" alt="" />
+            <img className='max-w-[250px] mx-auto' src="/Coffee-Logo.png" alt="" />
             <h1 className=' splheading text-brown uppercase font-semibold text-3xl
             sm:text-3xl md:text-4xl lg:text-5xl'>Caffiend</h1>
           </div>
